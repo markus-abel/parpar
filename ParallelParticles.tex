@@ -1,0 +1,76 @@
+%% ****** Start of file template.aps ****** %
+%%
+%%
+%%   This file is part of the APS files in the REVTeX 4 distribution.
+%%   Version 4.0 of REVTeX, August 2001
+%%
+%%
+%%   Copyright (c) 2001 The American Physical Society.
+%%
+%%   See the REVTeX 4 README file for restrictions and more information.
+%%
+%
+% This is a template for producing manuscripts for use with REVTEX 4.0
+% Copy this file to another name and then work on that file.
+% That way, you always have this original template file to use.
+%
+% Group addresses by affiliation; use superscriptaddress for long
+% author lists, or if there are many overlapping affiliations.
+% For Phys. Rev. appearance, change preprint to twocolumn.
+% Choose pra, prb, prc, prd, pre, prl, prstab, or rmp for journal
+%  Add 'draft' option to mark overfull boxes with black boxes
+%  Add 'showpacs' option to make PACS codes appear
+\documentclass[aps,prl,twocolumn,showpacs,superscriptaddress,groupedaddress]{revtex4}  % for review and submission
+%\documentclass[aps,preprint,showpacs,superscriptaddress,groupedaddress]{revtex4}  % for double-spaced preprint
+\usepackage{graphicx}  % needed for figures
+\usepackage{dcolumn}   % needed for some tables
+\usepackage{bm}        % for math
+\usepackage{amssymb,amsmath}   % for math
+\usepackage{array}
+\usepackage{units}
+\usepackage{color}
+\usepackage{natbib}
+
+\definecolor{darkgrey}{RGB}{50,50,50}
+\graphicspath{{}{./figures/}}
+% avoids incorrect hyphenation, added Nov/08 by SSR
+\hyphenation{ALPGEN}
+\hyphenation{EVTGEN}
+\hyphenation{PYTHIA}
+\newcommand{\TF}[1]{{\bf \textcolor{red} {{\it replace:} #1}}}
+\newcommand{\ToDo}[1]{{\bf \textcolor{red} {#1}}}
+
+
+\begin{document}
+% The following information is for internal review, please remove them for submission
+%\widetext
+%\leftline{Version xx as of \today}
+%\leftline{Primary authors: Joe E. Physics}
+%\leftline{To be submitted to (PRL, PRD-RC, PRD, PLB; choose one.)}
+%\leftline{Comment to {\tt d0-run2eb-nnn@fnal.gov} by xxx, yyy}
+%\centerline{\em D\O\ INTERNAL DOCUMENT -- NOT FOR PUBLIC DISTRIBUTION}
+
+% the following line is for submission, including submission to the arXiv!!
+%\hspace{5.2in} \mbox{Fermilab-Pub-04/xxx-E}
+
+\title{Parallelization of Particle Advection in a Channel Flow}
+%\input author_list.tex       % D0 authors (remove the first 3 lines
+                             % of this file prior to submission, they
+                             % contain a time stamp for the authorlist)
+                             % (includes institutions and visitors)
+\author{Unknown Worker}\affiliation{ESSTIN,LEMTA,NAncy}
+\author{A. Tani\`ere}\affiliation{ESSTIN,LEMTA,NAncy}
+\author{B. Arcen}\affiliation{ESSTIN,LEMTA,NAncy}
+\author{M.Abel}\affiliation{ESSTIN,LEMTA,NAncy}
+\date{\today}
+
+
+\begin{abstract}
+This is a mock
+\end{abstract}
+
+\pacs{}
+\maketitle
+
+
+\end{document}
